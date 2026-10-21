@@ -307,3 +307,81 @@ criterio.Todos(matriz_ej2, alfa = 0.5, favorable = TRUE)
 
 
 ## EJERCICIOS LUCIA RESUELTOS
+## Problema 1: Matriz Abstracta de Decisión
+```{r}
+v1 <- c(45, 30, 15, -10, 
+        35, 32, 28, 10, 
+        60, 25, 5, -25, 
+        50, 40, 0, -15)
+
+tb1 <- crea.tablaX(
+  vector_matporfilas = v1,
+  numalternativas = 4,
+  numestados = 4,
+  nb_alternativas = c("d1", "d2", "d3", "d4"),
+  nb_estados = c("e1", "e2", "e3", "e4")
+)
+
+```
+
+# Criterio Pesimista/Wald (Favorable)
+```{r}
+criterio.Wald(tb1, favorable = TRUE)
+```
+
+# Criterio Optimista (Favorable)
+```{r}
+criterio.Optimista(tb1, favorable = TRUE)
+```
+
+# Criterio Minimax (Desfavorable - Costes)
+```{r}
+criterio.Wald(tb1, favorable = FALSE)
+```
+
+# Criterio de Hurwicz (alpha=0.7, Favorable)
+```{r}
+criterio.Hurwicz(tb1, alfa = 0.7, favorable = TRUE)
+```
+
+# Criterio de Laplace (Favorable)
+```{r}
+criterio.Laplace(tb1, favorable = TRUE)
+```
+
+## Problema 2: Reestructuración de Liquidez Bancaria (Caso Real)
+
+```{r}
+v2 <- c(18, 24, 30, 
+        28, 22, 12, 
+        10, 16, 20)
+
+tb2 <- crea.tablaX(
+  vector_matporfilas = v2,
+  numalternativas = 3,
+  numestados = 3,
+  nb_alternativas = c("d1_Bonos_HQLA", "d2_Deuda_Tier2", "d3_Restriccion_Credito"),
+  nb_estados = c("e1_SubidaTipos", "e2_TiposEstables", "e3_BajadaTipos")
+)
+
+res_global <- criterio.Todos(tb2, alfa = 0.5, favorable = TRUE)
+res_global
+```
+
+# Respuestas Justificadas a las Cuestiones Planteadas
+
+## Problema 1
+
+* **P1.1 (VERDADERO):** En situación favorable, el criterio Pesimista (Wald) elige el máximo de los mínimos ($d_2 = 10$).
+* **P1.2 (FALSO):** El criterio Optimista busca el máximo absoluto de la matriz ($60$ en $d_3$).
+* **P1.3 (VERDADERO):** En costes/desfavorable, el criterio Minimax busca el menor de los peores costos ($d_2 = 35$).
+* **P1.4 (VERDADERO):** Con $\alpha = 0.7$, Hurwicz($d_3$) = $0.7 \times 60 + 0.3 \times (-25) = 34.5$, el más alto.
+* **P1.5 (FALSO):** El promedio óptimo en Laplace es $d_2 = 26.25$.
+
+## Problema 2
+
+* **P2.1 (VERDADERO):** El máximo de los peores resultados es $18$ en $d_1$ (Bonos HQLA).
+* **P2.2 (VERDADERO):** Comparando estado a estado, $d_1$ supera estrictamente a $d_3$ en todos los escenarios.
+* **P2.3 (FALSO):** $d_3$ presenta los mayores costes de oportunidad de la matriz; la alternativa óptima según Savage es $d_1$.
+* **P2.4 (VERDADERO):** $d_1$ obtiene el promedio más alto en Laplace ($24$).
+* **P2.5 (FALSO):** Para $\alpha = 0.5$, Hurwicz($d_1$) = 24 frente a Hurwicz($d_2$) = 20. La alternativa óptima sigue siendo $d_1$.
