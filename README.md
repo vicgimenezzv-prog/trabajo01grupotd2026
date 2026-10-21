@@ -23,4 +23,5 @@ La organización del trabajo se ha realizado de la siguiente manera:
 
 
 // ARCHIVO: SOLUCIONES
-El segundo archivo contiene las soluciones a los ejercicios propuestos de cada una de nosotras. En primer lugar, encontramos las soluciones de Victoria, en segundo lugar, las soluciones de Carla y, por último, las soluciones de Lucía. Las respuestas contienen la veracidad o falsedad de cada enunciado y la explicación del por qué. Además, también contienen los bloques de código que se han utilizado para llegar a cada valor lógico, con las funciones impartidas y facilitadas en clase. Podemos encontrar los documentos en pdf, html y rmd, al igual que en el archivo anterior.
+
+  El segundo archivo contiene las soluciones a los ejercicios propuestos de cada una de nosotras. En primer lugar, encontramos las soluciones de Victoria, en segundo lugar, las soluciones de Carla y, por último, las soluciones de Lucía. Las respuestas contienen la veracidad o falsedad de cada enunciado y la explicación del por qué. Además, también contienen los bloques de código que se han utilizado para llegar a cada valor lógico, con las funciones impartidas y facilitadas en clase. Podemos encontrar los documentos en pdf, html y rmd, al igual que en el archivo anterior.
