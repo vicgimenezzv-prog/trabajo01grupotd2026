@@ -97,3 +97,31 @@ Esta misma matriz se evaluará en dos escenarios distintos: primero asumiendo un
 3. Considerando la matriz como una situación desfavorable (costos), según el criterio de Wald, la alternativa óptima es **d_2**.
 4. Considerando la matriz como una situación desfavorable, el menor costo posible en toda la tabla es -4, correspondiente a la alternativa **d_3**.
 5. Si aplicamos el criterio optimista suponiendo que la matriz es de beneficios (favorable), la decisión óptima sería **d_3**.
+
+# Problema 2: Problema de Situación real
+
+Carlos es el dueño de una de las jugueterías más famosas de toda Sevilla y se ve en la situación de que debe decidir cuanto stock comprar de un nuevo robot de juguete que parece que va a estar de moda en estas próximas navidades.
+
+Tiene tres alternativas para realizar el pedido al proveedor, hacer un:
+-**Pedido Pequeño (d_1)**
+-**Pedido Mediano (d_2)** 
+-**Pedido Grande (d_3)**
+
+Los beneficios finales en miles de euros dependerán de cómo sea la aceptación del juguete en el mercado: que haya una **Demanda Baja (e_1)**, una **Demanda Media (e_2)**, o una **Demanda Alta (e_3)**.
+
+Si compra poco, no pierde dinero pero se queda sin stock rápido. Mientras que, si compra mucho y no se vende, tendrá pérdidas por el material sobrante que no podrá colocar. Carlos ha estimado la siguiente matriz de beneficios (recordamos que está en miles de euros):
+
+| | Demanda Baja ($e_1$) | Demanda Media ($e_2$) | Demanda Alta ($e_3$) |
+|---|:---:|:---:|:---:|
+| **Pedido Pequeño ($d_1$)** | 12 | 12 | 12 |
+| **Pedido Mediano ($d_2$)** | 6 | 24 | 24 |
+| **Pedido Grande ($d_3$)** | -8 | 20 | 50 |
+
+Puesto que son ingresos, consideramos que es una matriz favorable.
+
+### Preguntas del Problema 2:
+1. Según el criterio de Wald, es decir, según el criterio pesimista, la opción óptima para Carlos es asegurar haciendo el **Pedido Pequeño (d_1)**.
+2. Si Carlos aplica el criterio optimista, la mejor decisión sería hacer un **Pedido Mediano (d_2)**.
+3. Según el criterio de Laplace (asumiendo que las tres demandas son igual de probables), la mejor opción es el **Pedido Grande (d_3)**.
+4. El beneficio máximo posible que Carlos puede alcanzar en esta campaña es de 24.000 euros (24 en la tabla).
+5. Si finalmente ocurre que hay una Demanda Alta (e_3), la alternativa que da peores resultados es el **Pedido Pequeño (d_1)**.
