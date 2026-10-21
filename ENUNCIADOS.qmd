@@ -1,7 +1,8 @@
 ---
 title: "ENUNCIADO TRABAJO GRUPO"
-format: typst
-editor: visual
+format:
+  html: default
+  typst: default
 ---
 # EJERCICIOS VICTORIA
 
