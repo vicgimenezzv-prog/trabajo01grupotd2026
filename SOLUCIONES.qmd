@@ -10,7 +10,7 @@ format:
 source("teoriadecision_funciones_incertidumbre.R")
 ```
 
-## EJERCICIOS VICTORIA 
+## EJERCICIOS VICTORIA RESUELTOS
 
 ## PROBLEMA 1 (INCERTIDUMBRE)
 
@@ -197,7 +197,7 @@ res_todos
 - **4. Verdadero:** A diferencia del primer problema donde eran 3 estados (33,3%), al añadir el clima lluvioso, Laplace divide las probabilidades a partes iguales entre los 4 estados, es decir, 1/4 o 25% para cada uno.
 - **5. Verdadero:** Al promediar escenarios (Laplace da 36,25 de media) y ponderar extremos (Optimista con 85, Hurwicz con 53), el Delivery despunta como la mejor inversión global según estos tres criterios racionales.
 
-# EJERCICIOS CARLA
+# EJERCICIOS CARLA RESUELTOS
 
 # Resolución del primer problema.
 
@@ -304,3 +304,6 @@ criterio.Todos(matriz_ej2, alfa = 0.5, favorable = TRUE)
 3. **Verdadero** Es verdadera puesto que sabemos que las medias de beneficio son 12 para d_1, 18 para d_2 y 20,67 para d_3, por lo que el criterio de Laplace elegiría d_3.
 4. **Falso** Es falsa puesto que sabemos que el beneficio máximo posible de toda la tabla es 50, lo que equivale a 50.000 euros, no a 24.000.
 5. **Verdadero** Es verdadera puesto que sabemos que en la columna de Demanda Alta (e_3), los beneficios son 12 para d_1, 24 para d_2 y 50 para d_3, por lo que el peor resultado es el de d_1.
+
+
+## EJERCICIOS LUCIA RESUELTOS
