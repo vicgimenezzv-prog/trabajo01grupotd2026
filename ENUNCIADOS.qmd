@@ -129,7 +129,7 @@ Puesto que son ingresos, consideramos que es una matriz favorable.
 5. Si finalmente ocurre que hay una Demanda Alta (e_3), la alternativa que da peores resultados es el **Pedido Pequeño (d_1)**.
 
 
-##EJERCICIOS LUCIA
+## EJERCICIOS LUCIA
 
 ## Problema 1: Matriz Abstracta de Decisión
 
