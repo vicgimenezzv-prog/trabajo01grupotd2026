@@ -15,4 +15,6 @@ La organización del trabajo se ha realizado de la siguiente manera:
 
   Contenido del respositorio:
 
+- ARCHIVO: ENUNCIADOS
+
   El primero de los archivos consta de todos los enunciados realizados por cada una de nosotras. Los primeros son de Victoria, los segundos de Carla y los último de Lucía. Los enunciados de cada problema tienen 5 preguntas verdaderas o falsas relacionadas con cada uno de los problemas. El primer problema consta de una tabla de decisión con valores inventados y resuelto con cada uno de los métodos y el segundo problema consta de un enunciado que se refiere a una situación real. Este archivo estará en nuestro repositorio en formato (pdf, html y rmd).
