@@ -77,3 +77,23 @@ Una heladería del centro de Sevilla sufre una caída drástica de clientes dura
 3.  **Sobre la matriz de Savage:** Si la dueña elige la alternativa A2 (Gofres) y el invierno resulta ser muy cálido (E1), sufrirá el mayor coste de oportunidad de toda la matriz, alcanzando un arrepentimiento de 95.000€.
 4.  **Sobre el criterio de Laplace:** Al haber 4 estados climáticos posibles, el criterio de Laplace asume basándose en el Principio de Razón Insuficiente que cada uno tiene exactamente un 25% de probabilidad de ocurrir.
 5.  **Sobre la decisión global:** La alternativa A4 (Servicio Delivery) resulta ser una opción muy potente matemáticamente, siendo la ganadora bajo los criterios de Laplace, Optimista y Hurwicz.
+
+## EJERCICIOS CARLA 
+
+# Problema 1: Criterios de Decisión bajo Incertidumbre
+
+Esta misma matriz se evaluará en dos escenarios distintos: primero asumiendo una situación de beneficios (favorable) y posteriormente una situación de costos (desfavorable).
+
+| | $e_1$ | $e_2$ | $e_3$ |
+|---|:---:|:---:|:---:|
+| $d_1$ | 12 | 5 | 9 |
+| $d_2$ | 3 | 14 | 6 |
+| $d_3$ | -4 | 8 | 15 |
+| $d_4$ | 10 | -2 | 4 |
+
+### Preguntas del Problema 1:
+1. Considerando la matriz como una situación favorable (beneficios), según el criterio de Wald (pesimista), la alternativa óptima es **d_1**.
+2. Considerando la matriz como una situación favorable, el valor máximo posible que se puede alcanzar es 14.
+3. Considerando la matriz como una situación desfavorable (costos), según el criterio de Wald, la alternativa óptima es **d_2**.
+4. Considerando la matriz como una situación desfavorable, el menor costo posible en toda la tabla es -4, correspondiente a la alternativa **d_3**.
+5. Si aplicamos el criterio optimista suponiendo que la matriz es de beneficios (favorable), la decisión óptima sería **d_3**.
