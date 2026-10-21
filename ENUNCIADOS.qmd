@@ -3,6 +3,7 @@ title: "ENUNCIADO TRABAJO GRUPO"
 format: typst
 editor: visual
 ---
+# EJERCICIOS VICTORIA
 
 ## PROBLEMA 1 (INCERTIDUMBRE)
 
