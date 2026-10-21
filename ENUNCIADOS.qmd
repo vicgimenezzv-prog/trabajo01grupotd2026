@@ -150,3 +150,36 @@ Dada la siguiente matriz de decisión bajo incertidumbre con 4 alternativas ($d_
 5. **P1.5:** El criterio de Laplace (equiprobabilidad) en situación favorable elige $d_1$ como la opción óptima.
 
 
+## Problema 2: Reestructuración de Liquidez Bancaria (Caso Real)
+
+El Comité de Activos y Pasivos (ALCO) de una entidad bancaria comercial evalúa tres estrategias de gestión del colchón de liquidez regulatorio (LCR) y de capital en el marco de Basilea III/IV ante posibles decisiones de política monetaria del Banco Central.
+
+Las **alternativas estratégicas ($d_i$)** son:
+
+* **$d_1$ (Bonos Soberanos HQLA):** Reorientar la liquidez a deuda pública a corto plazo.
+* **$d_2$ (Deuda Subordinada Tier 2):** Captar capital regulatorio mediante emisión institucional.
+* **$d_3$ (Restricción del Crédito):** Disminuir la cartera de activos ponderados por riesgo (RWA).
+
+Los **estados de la naturaleza ($\theta_j$)** representan escenarios de tipos de interés:
+
+* **$\theta_1$ (Subida agresiva de tipos):** +150 pbs.
+* **$\theta_2$ (Mantenimiento de tipos):** Escenario base de estabilidad.
+* **$\theta_3$ (Bajada de tipos):** -100 pbs.
+
+La matriz refleja el beneficio neto ajustado por riesgo (en millones de euros):
+
+| Alternativa / Estado | $\theta_1$ (Subida tipos) | $\theta_2$ (Tipos estables) | $\theta_3$ (Bajada tipos) |
+| :--- | :---: | :---: | :---: |
+| **$d_1$ (Bonos HQLA)** | 18 | 24 | 30 |
+| **$d_2$ (Deuda Tier 2)** | 28 | 22 | 12 |
+| **$d_3$ (Restricción Crédito)** | 10 | 16 | 20 |
+
+### Cuestiones (Verdadero / Falso):
+1. **P2.1:** Si el banco adopta una postura conservadora con el criterio Pesimista (Wald) para garantizar su resistencia en el peor escenario, la estrategia recomendada es la reorientación a **Bonos Soberanos HQLA ($d_1$)**.
+2. **P2.2:** La estrategia de **Restricción del Crédito ($d_3$)** resulta totalmente dominada en sentido estricto por la inversión en **Bonos HQLA ($d_1$)**, ofreciendo un beneficio inferior ante cualquier escenario de tipos de interés.
+3. **P2.3:** Aplicando el criterio de Savage (Minimax Arrepentimiento), la estrategia que minimiza el coste de oportunidad para el banco es la **Restricción del Crédito ($d_3$)**.
+4. **P2.4:** Considerando equiprobabilidad en las decisiones del Banco Central (criterio de Laplace), la estrategia con mayor beneficio medio esperado para la entidad es el aumento del colchón en **Bonos HQLA ($d_1$)**.
+5. **P2.5:** Si el equipo directivo aplica el criterio de Hurwicz con un perfil equilibrado ($\alpha = 0.5$), la opción óptima para el banco pasa a ser la emisión de **Deuda Subordinada Tier 2 ($d_2$)**.
+
+
+
