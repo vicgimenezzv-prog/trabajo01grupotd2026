@@ -191,7 +191,7 @@ res_todos
 - **4. Verdadero:** A diferencia del primer problema donde eran 3 estados (33,3%), al añadir el clima lluvioso, Laplace divide las probabilidades a partes iguales entre los 4 estados, es decir, 1/4 o 25% para cada uno.
 - **5. Verdadero:** Al promediar escenarios (Laplace da 36,25 de media) y ponderar extremos (Optimista con 85, Hurwicz con 53), el Delivery despunta como la mejor inversión global según estos tres criterios racionales.
 
-# EJE CARLA
+# EJERCICIOS CARLA
 
 # Resolución del primer problema.
 
