@@ -126,3 +126,5 @@ Puesto que son ingresos, consideramos que es una matriz favorable.
 3. Según el criterio de Laplace (asumiendo que las tres demandas son igual de probables), la mejor opción es el **Pedido Grande (d_3)**.
 4. El beneficio máximo posible que Carlos puede alcanzar en esta campaña es de 24.000 euros (24 en la tabla).
 5. Si finalmente ocurre que hay una Demanda Alta (e_3), la alternativa que da peores resultados es el **Pedido Pequeño (d_1)**.
+
+
