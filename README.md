@@ -20,3 +20,7 @@ La organización del trabajo se ha realizado de la siguiente manera:
 // ARCHIVO: ENUNCIADOS
 
   El primero de los archivos consta de todos los enunciados realizados por cada una de nosotras. Los primeros son de Victoria, los segundos de Carla y los último de Lucía. Los enunciados de cada problema tienen 5 preguntas verdaderas o falsas relacionadas con cada uno de los problemas. El primer problema consta de una tabla de decisión con valores inventados y resuelto con cada uno de los métodos y el segundo problema consta de un enunciado que se refiere a una situación real. Este archivo estará en nuestro repositorio en formato (pdf, html y rmd).
+
+
+// ARCHIVO: SOLUCIONES
+El segundo archivo contiene las soluciones a los ejercicios propuestos de cada una de nosotras. En primer lugar, encontramos las soluciones de Victoria, en segundo lugar, las soluciones de Carla y, por último, las soluciones de Lucía. Las respuestas contienen la veracidad o falsedad de cada enunciado y la explicación del por qué. Además, también contienen los bloques de código que se han utilizado para llegar a cada valor lógico, con las funciones impartidas y facilitadas en clase. Podemos encontrar los documentos en pdf, html y rmd, al igual que en el archivo anterior.
