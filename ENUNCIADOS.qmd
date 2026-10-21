@@ -129,3 +129,24 @@ Puesto que son ingresos, consideramos que es una matriz favorable.
 5. Si finalmente ocurre que hay una Demanda Alta (e_3), la alternativa que da peores resultados es el **Pedido Pequeño (d_1)**.
 
 
+##EJERCICIOS LUCIA
+
+## Problema 1: Matriz Abstracta de Decisión
+
+Dada la siguiente matriz de decisión bajo incertidumbre con 4 alternativas ($d_1, d_2, d_3, d_4$) y 4 estados de la naturaleza ($\theta_1, \theta_2, \theta_3, \theta_4$):
+
+| Alternativa / Estado | $\theta_1$ | $\theta_2$ | $\theta_3$ | $\theta_4$ |
+| :--- | :---: | :---: | :---: | :---: |
+| **$d_1$** | 45 | 30 | 15 | -10 |
+| **$d_2$** | 35 | 32 | 28 | 10 |
+| **$d_3$** | 60 | 25 | 5 | -25 |
+| **$d_4$** | 50 | 40 | 0 | -15 |
+
+### Cuestiones (Verdadero / Falso):
+1. **P1.1:** En situación **favorable** (beneficios), la alternativa óptima según el criterio Wald (pesimista) es $d_2$.
+2. **P1.2:** En situación **favorable**, el criterio Optimista selecciona la alternativa $d_1$.
+3. **P1.3:** En situación **desfavorable** (costes/pérdidas), el criterio Minimax (pesimista) selecciona la alternativa $d_2$.
+4. **P1.4:** El criterio de Hurwicz con coeficiente de optimismo $\alpha = 0.7$ en situación favorable otorga el valor más alto a la alternativa $d_3$.
+5. **P1.5:** El criterio de Laplace (equiprobabilidad) en situación favorable elige $d_1$ como la opción óptima.
+
+
