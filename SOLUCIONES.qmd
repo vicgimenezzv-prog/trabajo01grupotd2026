@@ -253,5 +253,48 @@ criterio.PuntoIdeal(matriz_ej1, favorable = FALSE)
 4. **Verdadero**. Es verdadera puesto que el valor mínimo absoluto de la matriz es -4, situado en la intersección de d_3 y e_1.
 5. **Verdadero**. Es verdadera puesto que el optimista en beneficios buscaría el valor más alto de toda la matriz (15), por lo que elegiría d_3.
 
+## Problema 2: Problema de Situación real
 
+Carlos es el dueño de una de las jugueterías más famosas de toda Sevilla y se ve en la situación de que debe decidir cuánto stock comprar de un nuevo robot de juguete que parece que va a estar de moda en estas próximas navidades.
 
+Tiene tres alternativas para realizar el pedido al proveedor, hacer un:
+- **Pedido Pequeño (d_1)**
+- **Pedido Mediano (d_2)** 
+- **Pedido Grande (d_3)**
+
+Los beneficios finales en miles de euros dependerán de cómo sea la aceptación del juguete en el mercado: que haya una **Demanda Baja (e_1)**, una **Demanda Media (e_2)**, o una **Demanda Alta (e_3)**.
+
+Si compra poco, no pierde dinero pero se queda sin stock rápido. Mientras que, si compra mucho y no se vende, tendrá pérdidas por el material sobrante que no podrá colocar. Carlos ha estimado la siguiente matriz de beneficios (recordamos que está en miles de euros):
+
+| | Demanda Baja ($e_1$) | Demanda Media ($e_2$) | Demanda Alta ($e_3$) |
+|---|:---:|:---:|:---:|
+| **Pedido Pequeño ($d_1$)** | 12 | 12 | 12 |
+| **Pedido Mediano ($d_2$)** | 6 | 24 | 24 |
+| **Pedido Grande ($d_3$)** | -8 | 20 | 50 |
+
+Puesto que son ingresos, consideramos que es una matriz favorable.
+
+### Solución en R del Problema 2 (Criterios Conjuntos)
+
+```{r}
+matriz_ej2=matrix(c(12, 12, 12,
+                     6, 24, 24,
+                     -8, 20, 50), nrow = 3, byrow = TRUE)
+
+rownames(matriz_ej2)=c("Pedido Pequeño (d1)", "Pedido Mediano (d2)", "Pedido Grande (d3)")
+colnames(matriz_ej2)=c("Demanda Baja (e1)", "Demanda Media (e2)", "Demanda Alta (e3)")
+criterio.Todos(matriz_ej2, alfa = 0.5, favorable = TRUE)
+```
+### Preguntas del Problema 2:
+1. Según el criterio de Wald, es decir, según el criterio pesimista, la opción óptima para Carlos es asegurar haciendo el **Pedido Pequeño (d_1)**.
+2. Si Carlos aplica el criterio optimista, la mejor decisión sería hacer un **Pedido Mediano (d_2)**.
+3. Según el criterio de Laplace (asumiendo que las tres demandas son igual de probables), la mejor opción es el **Pedido Grande (d_3)**.
+4. El beneficio máximo posible que Carlos puede alcanzar en esta campaña es de 24.000 euros (24 en la tabla).
+5. Si finalmente ocurre que hay una Demanda Alta (e_3), la alternativa que da peores resultados es el **Pedido Pequeño (d_1)**.
+
+### Respuestas del Problema 2:
+1. **Verdadero** Es verdadera puesto que sabemos que en el criterio de Wald se busca el máximo de los mínimos (12, 6, -8), y el máximo es 12, que corresponde a d_1.
+2. **Falso** Es falsa puesto que sabemos que el optimista buscaría el beneficio más alto de toda la matriz, que es 50, por lo que la alternativa óptima es d_3.
+3. **Verdadero** Es verdadera puesto que sabemos que las medias de beneficio son 12 para d_1, 18 para d_2 y 20,67 para d_3, por lo que el criterio de Laplace elegiría d_3.
+4. **Falso** Es falsa puesto que sabemos que el beneficio máximo posible de toda la tabla es 50, lo que equivale a 50.000 euros, no a 24.000.
+5. **Verdadero** Es verdadera puesto que sabemos que en la columna de Demanda Alta (e_3), los beneficios son 12 para d_1, 24 para d_2 y 50 para d_3, por lo que el peor resultado es el de d_1.
