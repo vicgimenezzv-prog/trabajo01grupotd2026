@@ -4,6 +4,12 @@ format:
   html: default
   typst: default
 ---
+
+```{r, echo=TRUE}
+#Cargamos el fichero de funciones
+source("teoriadecision_funciones_incertidumbre.R")
+```
+
 ## EJERCICIOS VICTORIA 
 
 ## PROBLEMA 1 (INCERTIDUMBRE)
