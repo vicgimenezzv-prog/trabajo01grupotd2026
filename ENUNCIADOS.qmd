@@ -1,0 +1,44 @@
+---
+title: "ENUNCIADO TRABAJO GRUPO"
+format: typst
+editor: visual
+---
+
+## PROBLEMA 1 (INCERTIDUMBRE)
+
+Una marca de ropa sevillana está planificando su línea principal de producción para la próxima campaña de otoño-invierno. Los beneficios dependerán de la meteorología, la cual es incierta.
+
+**Alternativas de decisión:**
+
+- **A1 (Alta Montaña):** Abrigos muy gruesos y térmicos. Alto coste de producción, margen de beneficio muy alto, pero riesgo elevado si no hace frío.
+- **A2 (Casual/Urbana):** Ropa de abrigo de grosor medio. Coste de producción medio, margen estable y riesgo moderado por su gran versatilidad.
+- **A3 (Básicos de Entretiempo):** Sudaderas y chaquetas ligeras. Coste de producción bajo, margen moderado y ventas muy seguras si el clima es cálido.
+- **A4 (Línea Waterproof):** Chubasqueros y calzado impermeable. Coste de producción medio-alto, margen alto, pero ventas totalmente dependientes de la lluvia.
+- **A5 (Outlet/Liquidación):** Vender el remanente del año anterior. Coste de producción nulo (ya está fabricado), margen de beneficio bajo por los descuentos, pero riesgo cero.
+
+**Estados de la naturaleza:**
+
+- **E1 (Muy frío y seco):** Ola de frío prolongada.
+- **E2 (Invierno estándar):** Temperaturas normales para la época.
+- **E3 (Cálido):** Temperaturas altas, el frío tarda meses en llegar.
+- **E4 (Muy lluvioso/Inestable):** Lluvias constantes y fuertes.
+
+**Tabla de Beneficios (en miles de euros):**
+
+| Alternativas / Clima | E1 (Frío y seco) | E2 (Estándar) | E3 (Cálido) | E4 (Lluvioso) |
+|:--------------|:--------------|:--------------|:--------------|:--------------|
+| **A1 (Alta Montaña)** | 150 | 60 | -30 | 10 |
+| **A2 (Casual/Urbana)** | 90 | 100 | 30 | 50 |
+| **A3 (Entretiempo)** | 20 | 50 | 90 | 40 |
+| **A4 (Waterproof)** | 60 | 50 | 10 | 130 |
+| **A5 (Outlet)** | 40 | 40 | 40 | 40 |
+
+**PREGUNTAS VERDADERO/FALSO**
+
+1.  **Sobre el comportamiento de Wald:** El criterio de Wald selecciona la misma alternativa (A5) tanto si asumimos que los datos representan beneficios (situación favorable) como si asumimos que representan costes (situación desfavorable).
+2.  **Sobre la matriz de Savage:** Para aplicar el criterio de Savage en situación de beneficios, se construye una matriz de arrepentimientos o costes de oportunidad. En dicha matriz, el mayor arrepentimiento posible si ocurre el estado E1 (Muy frío y seco) es de 130 miles de euros.
+3.  **Sobre el índice de Hurwicz:** Si en el criterio de Hurwicz (situación favorable) aplicásemos un índice de optimismo extremo de $\alpha = 1$, la alternativa seleccionada coincidiría exactamente con la elegida por el criterio de Wald.
+4.  **Sobre el supuesto de Laplace:** El criterio de Laplace selecciona la alternativa A2 (Casual/Urbana) porque asume lógicamente que el estado E2 (Invierno estándar) tiene una probabilidad de ocurrencia mucho mayor que los climas extremos.
+5.  **Sobre el Punto Ideal:** En la resolución de la situación desfavorable (costes), el método del Punto Ideal calcula la distancia euclídea de cada alternativa frente a un escenario ficticio ideal compuesto por los valores (-30, 40, -30, 10).
+
+## 
